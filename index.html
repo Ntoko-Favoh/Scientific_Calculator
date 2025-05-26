@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="screen">
+            
+            <!-- First Row -->
+            <button onclick="C()" class="fn-btn">AC</button>
+            <button onclick="del()" class="fn-btn">DEL</button>
+            <button onclick="display('%')" class="fn-btn">%</button>
+            <button onclick="display('(')" class="sci-btn">(</button>
+            <button onclick="display(')')" class="sci-btn">)</button>
+            <button onclick="display('/')" class="sci-btn">÷</button>
+            
+            <!-- Second Row -->
+            <button onclick="display('Math.sin(')" class="sci-btn">sin</button>
+            <button onclick="display('Math.cos(')" class="sci-btn">cos</button>
+            <button onclick="display('Math.tan(')" class="sci-btn">tan</button>
+            <button onclick="display('Math.log(')" class="sci-btn">log</button>
+            <button onclick="display('Math.sqrt(')" class="sci-btn">√</button>
+            <button onclick="display('*')" class="sci-btn">×</button>
+            
+            <!-- Third Row -->
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('Math.PI')" class="sci-btn">π</button>
+            <button onclick="display('Math.pow(')" class="sci-btn">x^y</button>
+            <button onclick="display('-')" class="sci-btn">-</button>
+            
+            <!-- Fourth Row -->
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('Math.exp(')" class="sci-btn">e^x</button>
+            <button onclick="display('Math.pow(10,')" class="sci-btn">10^x</button>
+            <button onclick="display('+')" class="sci-btn">+</button>
+            
+            <!-- Fifth Row -->
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('Math.abs(')" class="sci-btn">abs</button>
+            <button onclick="display('Math.log10(')" class="sci-btn">log10</button>
+            <button onclick="display('Math.E')" class="sci-btn">e</button>
+            
+            <!-- Sixth Row -->
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('Math.floor(')" class="sci-btn">floor</button>
+            <button onclick="display('Math.ceil(')" class="sci-btn">ceil</button>
+            <button onclick="display('factorial(')" class="sci-btn">n!</button>
+            <button onclick="calculate()" class="eval">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
